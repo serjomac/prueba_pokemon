@@ -1,0 +1,19 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.clear-button {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-edit {
+    background: url(assets/icons/edit-icon.png);
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+}
+.btn-delete {
+    background: url(assets/icons/delete-icon.png);
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+}

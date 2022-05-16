@@ -1,0 +1,17 @@
+<header></header>
+<div class="container-lg mt-3">
+    <div class="row">
+        <div class="col-8 col-lg-8 d-flex flex-column">
+            <label for="">Lista de Pokemones</label>
+            <input (input)="search($event)" class="input-search" placeholder="Buscar pokemon" type="text" >
+        </div>
+        <div class="col-4 col-lg-4 d-flex justify-content-end">
+            <button class="add-button" type="button" (click)="showAddForm()"><span class="icon"></span>Agregar</button>
+        </div>
+    </div>
+</div>
+<app-table [columns] = "columns" [dataTable] = "pokemonsList" (onEdit)="edit($event)" (onDelete)="delete($event)"></app-table>
+<div class="modal-body" *ngIf="showForm">
+    <app-add-pokemon [selectedItem]="selectedItem" (onCancel)="cancel()" (onEdit)="editPokemon($event)" (onAdd)="addPokemon($event)"></app-add-pokemon>
+</div>
+<!--  <router-outlet></router-outlet> -->

@@ -1,0 +1,41 @@
+.input-search {
+    background: url(../../../assets/icons/search-icon.png) no-repeat scroll 7px 7px;
+    padding-left:30px;
+    width: 250px;
+}
+
+.add-button {
+    display: inline-block;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6F64FF;
+    color: azure;
+}
+.add-button .icon {
+    background: url(../../../assets/icons/add-icon.png) no-repeat;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.add-button .span {
+    float: left;
+    width: 20px;
+    height: 20px;
+} 
+
+.btn-edit {
+    background: url(../../../assets/icons/edit-icon.png);
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+}
+.btn-delete {
+    background: url(../../../assets/icons/delete-icon.png);
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+}

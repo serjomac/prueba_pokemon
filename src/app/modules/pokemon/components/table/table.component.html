@@ -1,0 +1,26 @@
+<!-- tabla de pokemones -->
+<div class="container w-75 mt-3 container-table">
+    <div class="row">
+        <table>
+          <thead>
+            <tr>
+              <th *ngFor="let col of columns">{{col.displayName}}</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let item of dataTable">
+                <td>{{item.name}}</td>
+                <td> <img src="{{item.image}}" alt="" srcset=""></td>
+                <td>{{item.attack}}</td>
+                <td>{{item.defense}}</td>
+                <td>
+                    <div class="d-flex">
+                        <button (click)="edit(item)" class="clear-button btn-edit"></button>
+                        <button (click)="delete(item)" class="clear-button btn-delete ms-3"></button>
+                    </div>
+                </td>
+              </tr>
+          </tbody>
+          </table>
+    </div>
+</div>

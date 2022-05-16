@@ -1,0 +1,21 @@
+img {
+    width: 25px;
+    height: 25px;
+}
+td {
+    height: 50px;
+}
+.container-table {
+    height: 250px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #6F64FF;
+  }
